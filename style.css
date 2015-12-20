@@ -1,0 +1,240 @@
+/*This is the body attributes*/
+body{
+	background-color: #D1FFD1;
+}
+section {
+	width: 80.527086%;
+	text-align: center;
+	background-color: white;
+	margin: auto;
+}
+p{
+	font-size: 16px;
+}
+#content1, #content2, #content3{
+	padding: 10px;
+	width: 72.727273%;
+	height: 370px;
+	background-color: white;
+	margin: 10px auto 0 auto;
+}
+
+/*Header includes h1 & h2 , horizontal line, ul container*/
+#header > h1{
+	color: white;
+	margin: 0 0 -15px 0;
+	padding-top: 30px;
+	padding-bottom: 10px;
+	font-family: 'Lato', sans-serif;
+	font-size: 55px;
+}
+#header > h2{
+	font-family: 'Raleway', sans-serif;
+	color: white;
+}
+#header{
+	width: 100%;
+	height: 50%;
+	background: url("image/mountain.jpg") no-repeat center center;
+	background-size: cover;
+}
+.hr, .hr2{
+	height:0; 
+  	border:0; 
+  	margin: auto;
+  	position: relative;
+  	top: 80px;
+  	border-top:2px dotted #CCCCCC;
+  	width: 60%;
+}
+.hr2{
+	top:130px;
+}
+.nav{
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    width: inherit;
+    font-family: 'Open Sans', sans-serif;
+  	position: relative;
+  	top: 80px;
+}
+.nav li {
+  display: inline;
+}
+.nav li:last-child {
+  padding-right: 0;
+}
+.nav li a{
+	font-size: 20px;
+	text-decoration: none;
+	color:white;
+	display: inline-block;
+	text-align: center;
+	padding: 14px 40px 16px 40px;
+}
+.nav li a:hover:not(.active) {
+	background: rgba(255, 255, 255, 0.6);
+  color: black;
+}
+.active{
+	background: rgba(255, 255, 255, 0.6);
+}
+
+/*Content 1 section includes picture, description*/
+
+.segment1 img{
+/*	float: left;*/
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	margin-left: 35px;
+}
+.segment1{
+	width: 31.25%;
+	height: 100%;
+	float: left;
+	display: inline-block;
+}	
+.segment2{
+	width: 62.5%;
+	height: 100%;
+	display: inline;
+	float: right;
+}
+.segment2 h2,p{
+	margin: 15px 35px 10px 15px;
+	text-align: left;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 30px;
+}
+
+/*Content 2 include thumbnail of personal project, personal hobby and latest articles.*/
+#content2{
+	height: 525px;
+}
+#content2 h1, #content3 h1{
+	font-size: 250%;
+	margin: 30px 0 20px 0;
+}
+
+/*---------------------------------
+blinking underscore*/
+
+.blinking-cursor {
+  font-weight: 100;
+  font-size: 30px;
+  color: #2E3D48;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+/*------------------------------*/
+
+.personal-project,
+.personal-hobby,
+.blog {
+	width: 33.333333%;
+/*	height: 100%;*/
+	float: left;
+	margin: 20px 0 0 0;
+}
+.personal-project p, 
+.personal-hobby p,
+.blog p{
+	text-align: center;
+}
+img.icon{
+	margin: 20px;
+}
+p.green{
+	color: black;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	font-size: 150%;
+}
+.btn {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: 'Open Sans', sans-serif;
+  color: #000;
+  font-size: 15px;
+  background: #fff;
+  padding: 10px 20px 10px 20px;
+  border: solid #000 2px;
+  text-decoration: none;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  text-decoration: none;
+  color: #00cc66;
+  border: solid #00cc66 2px;
+}
+
+/*============================================
+Content 3 includes my social network*/
+#content3{
+	height: 250px;
+	margin-bottom: 50px;
+}
+#content3 h1{
+	font-size: 150%;
+}
+img.social-icon{
+	width: 80px;
+	height: 80px;
+	display: inline-block;
+	margin: 20px 25px 0 0;
+}
